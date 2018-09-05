@@ -1,0 +1,8 @@
+[submodule "Lua-cURLv3"]
+	url = https://github.com/Lua-cURL/Lua-cURLv3
+	path = Lua-cURLv3
+
+
+[submodule "lua-cjson"]
+	url = https://github.com/mpx/lua-cjson
+	path = lua-cjson
