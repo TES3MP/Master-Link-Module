@@ -20,6 +20,7 @@ add_custom_target(copyMLM)
 add_custom_command(TARGET copyMLM PRE_BUILD
         COMMAND ${CMAKE_COMMAND} -E make_directory "${LIBDIR}"
         COMMAND ${CMAKE_COMMAND} -E make_directory "${CFGDIR}"
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${SCRDIR}"
         COMMAND ${CMAKE_COMMAND} -E make_directory "${LIBDIR}/lua"
         COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/src/mlapi.lua "${LIBDIR}/lua"
         COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/src/master.lua "${SCRDIR}"
