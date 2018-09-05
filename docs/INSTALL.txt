@@ -1,0 +1,6 @@
+Copy files to the server directory
+Add "master.lua" as first plugin to server config, example:
+[Plugins]
+plugins = master.lua,serverCore.lua
+
+Change settings in data/master.json
