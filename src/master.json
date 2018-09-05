@@ -1,0 +1,21 @@
+{
+  "login":    "TestAcc0",
+  "password": "TestAcc0",
+
+  "hostname": "My TES3MP Server",
+  "modname":  "default",
+
+  "reconnectionAttempts": 3,
+
+  "compat": {
+    "port": 25565,
+    "maxPlayers": 30,
+    "hasPassword": true
+  },
+
+
+  "extra": {
+    "site": "example.com",
+    "email":"acme@example.com"
+  }
+}
