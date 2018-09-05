@@ -65,7 +65,7 @@ local pluginList = {}
 local playerList = {}
 
 local function Connect()
-    local ml = mlapi.new("http://master2.com/api/servers")
+    local ml = mlapi.new("http://master.tes3mp.com/api/servers")
 
     if compatFlag.manualMaxPl then
         ml:SetMaxPlayers(cfg.compat.maxPlayers)
