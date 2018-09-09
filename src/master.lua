@@ -126,10 +126,9 @@ local function UpdatePlayerList(ml)
     ml:SetPlayers(list)
 end
 
-function UpdateMaster()
-    local ml = Connect()
-    if not ml then return nil end
+local ml
 
+function UpdateMaster()
     UpdatePlayerList(ml)
 
     local status, message = ml:Update()
@@ -144,6 +143,7 @@ end
 
 function OnServerPostInit()
     CheckCompatibility()
+    ml = Connect()
     updateMasterId = tes3mp.CreateTimer("UpdateMaster", 0)
     tes3mp.StartTimer(updateMasterId)
 end
