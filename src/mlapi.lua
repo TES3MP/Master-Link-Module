@@ -114,7 +114,6 @@ function mt.Update(self)
     local message
 
     local payload = self.server
-    print(cjson.encode(payload))
     self.server = {} -- reset after copying
     payload["sessionId"] = self.sessionId
 
