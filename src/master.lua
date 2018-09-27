@@ -143,8 +143,8 @@ end
 
 function OnServerPostInit()
     CheckCompatibility()
-    ml = Connect()
     updateMasterId = tes3mp.CreateTimer("UpdateMaster", 0)
+    ml = Connect()
     tes3mp.StartTimer(updateMasterId)
 end
 
